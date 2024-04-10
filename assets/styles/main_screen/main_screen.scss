@@ -14,7 +14,6 @@
 // Main Screen
 .main_screen {
     width: 100vw;
-    height: 500px;
     margin-top: 90px;
 
     @media (max-width: 500px) {
@@ -36,7 +35,7 @@
         font-size: 16px;
         line-height: 19.5px;
         color: var(--dark-grey);
-        margin-top: 20px;
+        margin-top: 130px;
         display: flex;
         word-spacing: 10px;
         max-width: 100%;

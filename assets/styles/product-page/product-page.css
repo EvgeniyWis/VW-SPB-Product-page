@@ -1,0 +1,9 @@
+.product {
+  display: flex;
+  padding: 0 250px;
+  gap: 20px;
+  height: 500px;
+}
+.product__slider {
+  max-width: 100%;
+}/*# sourceMappingURL=product-page.css.map */

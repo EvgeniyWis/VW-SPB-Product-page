@@ -145,3 +145,7 @@ main {
 .hidden {
     display: none !important;
 }
+
+.swiper-slide-active {
+    max-width: 100% !important;
+}
