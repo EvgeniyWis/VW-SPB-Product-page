@@ -1,10 +1,88 @@
 .product {
-    display: flex;
+    display: grid;
+    grid-template-columns: 0.6fr 0.4fr;
     padding: 0 250px;
     gap: 20px;
     height: 500px;
+    margin-top: 50px;
+    width: 100%;
+    margin-bottom: 50px;
 
-    &__slider {
-        max-width: 100%;
+    /* Стили для слайдера */
+
+    &--slider {
+        display: flex;
+        width: 100%;
+        position: relative;
+        overflow-x: hidden;
+    }
+
+    .product__arrows--prev,
+    .product__arrows--next {
+        position: absolute;
+        z-index: 2;
+        cursor: pointer;
+        align-self: center;
+
+        &:hover {
+            circle {
+                transition: .3s ease-in-out all;
+                fill: #0032A0;
+            }
+
+            path {
+                transition: .3s ease-in-out all;
+                stroke: white;
+            }
+        }
+    }
+
+    .swiper-button-disabled {
+        opacity: 0.7;
+
+        &:hover {
+
+            circle {
+                fill: white;
+            }
+
+            path {
+                stroke: #0032A0;
+            }
+        }
+    }
+
+    .product__arrows--prev {
+        left: 20px;
+    }
+
+    .product__arrows--next {
+        right: 20px;
+    }
+
+    .swiper-pagination {
+        display: flex;
+        gap: 5px;
+        margin-bottom: 5px;
+
+        &--item {
+            width: 100%;
+            background-color: #BCBCBC;
+            height: 2px;
+            transition: .2s linear ease-in;
+            cursor: pointer;
+
+            &--active {
+                background-color: var(--dark-blue);
+            }
+        }
+    }
+
+    .swiper-wrapper {
+        .product__slider--image {
+            object-fit: cover;
+            width: 100% !important;
+            height: 450px;
+        }
     }
 }

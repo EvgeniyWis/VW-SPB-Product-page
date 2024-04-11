@@ -7,6 +7,7 @@
   <meta name="description" content='Страница продукта для веб сайта "VW-SPB"'>
   <meta name="keywords" content="html, css, js">
   <meta name="author" content="KrisWis, botya060606">
+  <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css" />
   <link rel="stylesheet" href="main.css">
   <link rel="stylesheet" href="assets/styles/header/header.css">
   <link rel="stylesheet" href="assets/styles/footer/footer.css">
@@ -90,40 +91,35 @@
               <p class="breadcrumbs--text"><a>Главная</a> <span>></span> <a>Каталог</a> <span>></span> <a>Volkswagen ID.4</a></p>
             </div>
           </section>
+                
+          <section class="product">
 
-          <section class="product" id="product">
+            <section class="product--slider" id="product--slider">
 
-            <swiper-container class="product__slider" navigation="true" pagination="true">
+              <svg class="product__arrows--prev" id="product__arrows--prev" width="28" height="28" viewBox="0 0 28 28" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <circle cx="14" cy="14" r="14" fill="white"/>
+                <path d="M17 20L11 14L17 8" stroke="#0032A0" stroke-width="1.5" stroke-linecap="round"/>
+              </svg>
+              
+              <div class="swiper-wrapper">
+                  
+                <img class="product__slider--image swiper-slide" src="assets/images/slider__image--item.png" alt="Элемент слайдера">
+                <img class="product__slider--image swiper-slide" src="assets/images/slider__image--item.png" alt="Элемент слайдера">
+                <img class="product__slider--image swiper-slide" src="assets/images/slider__image--item.png" alt="Элемент слайдера">
+                <img class="product__slider--image swiper-slide" src="assets/images/slider__image--item.png" alt="Элемент слайдера">
+                <img class="product__slider--image swiper-slide" src="assets/images/slider__image--item.png" alt="Элемент слайдера">
+                <img class="product__slider--image swiper-slide" src="assets/images/slider__image--item.png" alt="Элемент слайдера">
+  
+              </div>
+  
+              <svg class="product__arrows--next" id="product__arrows--next" width="28" height="28" viewBox="0 0 28 28" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <circle cx="14" cy="14" r="14" transform="rotate(-180 14 14)" fill="white"/>
+                <path d="M11 8L17 14L11 20" stroke="#0032A0" stroke-width="2" stroke-linecap="round"/>
+              </svg>
 
-              <div class="swiper-button-prev"></div>
+              <div class="swiper-pagination" id="product__pagination"></div>
 
-              <swiper-slide>
-                <img src="assets/images/slider__image--item.png" alt="Элемент слайдера">
-              </swiper-slide>
-
-              <swiper-slide>
-                <img src="assets/images/slider__image--item.png" alt="Элемент слайдера">
-              </swiper-slide>
-
-              <swiper-slide>
-                <img src="assets/images/slider__image--item.png" alt="Элемент слайдера">
-              </swiper-slide>
-
-              <swiper-slide>
-                <img src="assets/images/slider__image--item.png" alt="Элемент слайдера">
-              </swiper-slide>
-
-              <swiper-slide>
-                <img src="assets/images/slider__image--item.png" alt="Элемент слайдера">
-              </swiper-slide>
-
-              <swiper-slide>
-                <img src="assets/images/slider__image--item.png" alt="Элемент слайдера">
-              </swiper-slide>
-
-              <div class="swiper-button-next"></div>
-
-            </swiper-container>
+            </section>
 
           </section>
 
@@ -209,7 +205,7 @@
       </footer>
 
 
-  <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-element-bundle.min.js"></script>
-  <script async src="assets/scripts/main.js"></script>
+  <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
+  <script src="assets/scripts/main.js"></script>
 </body>
 </html>

@@ -149,3 +149,7 @@ main {
 .swiper-slide-active {
     max-width: 100% !important;
 }
+
+svg {
+    display: block;
+}

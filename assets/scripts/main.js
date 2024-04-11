@@ -14,3 +14,21 @@ navbar__adaptive_menu_cross.addEventListener("click", () => {
     navbar__adaptive_menu.classList.remove("navbar__adaptive--active");
     popup__background.classList.remove("popup__background__active");
 })
+
+/* Инициализация слайдера в секции продукта */
+new Swiper('#product--slider', {
+    direction: 'horizontal',
+    spaceBetween: 0,
+
+    navigation: {
+        nextEl: '#product__arrows--next',
+        prevEl: '#product__arrows--prev',
+    },
+
+    pagination: {
+        el: "#product__pagination",
+        bulletClass: 'swiper-pagination--item',
+        bulletActiveClass: 'swiper-pagination--item--active',
+        clickable: true,
+    }
+});

@@ -42,12 +42,7 @@
   word-spacing: 10px;
   max-width: 100%;
   position: relative;
-  left: 13.5%;
-}
-@media (max-width: 500px) {
-  .main_screen .breadcrumbs {
-    left: 3%;
-  }
+  padding: 0 250px;
 }
 .main_screen--caption {
   font-weight: 700;
