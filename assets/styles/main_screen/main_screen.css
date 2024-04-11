@@ -16,11 +16,6 @@
   width: 100vw;
   margin-top: 90px;
 }
-@media (max-width: 500px) {
-  .main_screen {
-    height: 230px;
-  }
-}
 .main_screen .main_img {
   width: 100%;
   max-height: 100%;
@@ -43,6 +38,22 @@
   max-width: 100%;
   position: relative;
   padding: 0 250px;
+}
+@media (max-width: 1600px) {
+  .main_screen .breadcrumbs {
+    padding: 0 100px;
+  }
+}
+@media (max-width: 1200px) {
+  .main_screen .breadcrumbs {
+    padding: 0 30px;
+  }
+}
+@media (max-width: 820px) {
+  .main_screen .breadcrumbs {
+    padding: 0 10px;
+    margin-top: 0;
+  }
 }
 .main_screen--caption {
   font-weight: 700;
