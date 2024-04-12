@@ -32,3 +32,5 @@ new Swiper('#product--slider', {
         clickable: true,
     }
 });
+
+new Accordion('.accordion-container');
