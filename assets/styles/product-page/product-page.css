@@ -330,7 +330,7 @@
     right: 40.5%;
   }
 }
-@media (max-width: 600px) {
+@media (max-width: 400px) {
   .functional_image--point_wheel {
     right: 33%;
   }
@@ -367,7 +367,7 @@
 }
 @media (max-width: 1400px) {
   .functional_image--point_tablet {
-    right: 18.5%;
+    right: 23.5%;
   }
 }
 @media (max-width: 750px) {
@@ -464,6 +464,12 @@
 .functional_image--point_door {
   top: 64%;
   right: 62.5%;
+}
+@media (max-width: 1200px) {
+  .functional_image--point_door {
+    top: 60%;
+    right: 77%;
+  }
 }
 @media (max-width: 820px) {
   .functional_image--point_door {
