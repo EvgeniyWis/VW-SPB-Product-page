@@ -33,4 +33,5 @@ new Swiper('#product--slider', {
     }
 });
 
-new Accordion('.accordion-container');
+new Accordion('.ac-first-col');
+new Accordion('.ac-second-col');
