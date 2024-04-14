@@ -110,6 +110,9 @@
 }
 @media (max-width: 820px) {
   .product .swiper-wrapper .product__slider--image {
+    width: 101.5% !important;
+  }
+  .product .swiper-wrapper .product__slider--image:first-of-type {
     width: 90% !important;
   }
 }

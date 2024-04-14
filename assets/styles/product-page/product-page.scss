@@ -117,7 +117,11 @@
             object-position: center center;
 
             @media (max-width: 820px) {
-                width: 90% !important;
+                width: 101.5% !important;
+
+                &:first-of-type {
+                    width: 90% !important;
+                }
             }
         }
     }

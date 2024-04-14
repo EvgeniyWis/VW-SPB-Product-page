@@ -42,7 +42,7 @@ body {
 }
 
 * {
-    font-family: var(--font-family);
+    font-family: var(--font-family) !important;
     -webkit-box-sizing: border-box;
     /* Safari/Chrome, other WebKit */
     -moz-box-sizing: border-box;
